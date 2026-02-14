@@ -1,0 +1,19 @@
+# task 1
+print("Hello, world!")
+greeting = "Hello, world!"
+print(greeting)
+
+# task 2
+length = 8
+width = 10
+tiles_needed = length * width
+print(tiles_needed)
+
+length_corrected = 20
+tiles_corrected = length_corrected * width
+print(tiles_corrected)
+
+side_a = 23
+side_b = 13
+area = side_a * side_b
+print(area)
