@@ -1,7 +1,12 @@
 from api_proxy.api_methods import *
+from api_proxy.analytics import get_top_articles
 import pprint as pp
+import json
 
 if __name__ == '__main__':
-    # result = get_top_headlines(q='apple', api_key='1053d4068827490c92d9f83a28fa8295')
-    result = get_everything(q="bitcoin", api_key="eb06bb24ef204dee8e6463bd4e5d6a78")
+    API_KEY = '1053d4068827490c92d9f83a28fa8295'
+    q='bitcoin'
+    result = get_top_articles(q, API_KEY)
     pp.pprint(result)
+
+    
