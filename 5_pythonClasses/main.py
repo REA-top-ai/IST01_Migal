@@ -43,8 +43,7 @@ class Teacher(Person):
         self.__salary = 0
 
     def set_salary(self, amount):
-        assert(amount > 0) 
-        "Error: salary must be a positive integer."
+        assert(amount > 0), "Error: salary must be a positive integer."
     
     def get_role_info(self):
         return f'Teacher {self.__name} teaches a {self.__subject}, his salary is {self.__salary}'
